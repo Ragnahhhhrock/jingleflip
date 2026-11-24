@@ -12,7 +12,7 @@
     {
       "binding": "DB",
       "database_name": "jingleflip-scores",
-      "database_id": "REPLACE_WITH_D1_ID"
+      "database_id": "df2d6750-544a-42b9-b86f-d899238c6d83"
     }
   ],
   "routes": [
