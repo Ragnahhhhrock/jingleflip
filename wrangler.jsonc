@@ -1,0 +1,23 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "jingleflip",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "binding": "ASSETS",
+    "run_worker_first": true
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "jingleflip-scores",
+      "database_id": "REPLACE_WITH_D1_ID"
+    }
+  ],
+  "routes": [
+    { "pattern": "jingleflip.com", "custom_domain": true },
+    { "pattern": "www.jingleflip.com", "custom_domain": true }
+  ],
+  "observability": { "enabled": true }
+}
